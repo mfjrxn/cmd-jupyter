@@ -86,6 +86,15 @@ Jangan lupa setiap file markdown wajib paling atas (#) sebagai judul dari materi
 ```
 $ jupyter-book build materi  -> cmd untuk build menjadi html
 ```
+```
+Tunggu hingga selesai:
+Finished generating HTML for book.
+Your book's HTML pages are here:
+    materi/_build/html/
+You can look at your book by opening this file in a browser:
+    materi/_build/html/index.html
+
+```
 
 ## Tahap 2 (Push file perubahan ke github)
 * bagian ini **ga wajib** hanya saran kalau data di codespace hilang, jaga jaga jadi bisa di lihat di repo.
