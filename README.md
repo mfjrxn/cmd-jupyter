@@ -99,7 +99,7 @@ $ git push  -> cmd push file ke github
 ## Tahap 3 (Hasil build menjadi website online di github pages)
 Jalankan perintah: ($) 
 ```
-$ pip install ghp-import -> skip perintah ini jika merasa sudah install
+$ pip install ghp-import -> **skip perintah ini jika merasa sudah install**
 $ cd materi -> cmd masuk ke materi
 $ ghp-import -n -p -f _build/html  -> cmd push ke branch gh-pages dan menjadi website online
 ```
