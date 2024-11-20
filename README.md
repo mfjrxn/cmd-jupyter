@@ -37,12 +37,21 @@ chapters:
 - file: markdown
 - file: notebooks
 - file: markdown-notebooks
-- file: boolean.md
 ```
 - Note:
-  - Disini tempat daftar isinya yang akan muncul di web. tambahkan setiap ada penambahan file md baru. contoh ada materi himpunan maka tambahkan
+  - Disini tempat daftar isinya yang akan muncul di web. tambahkan setiap ada penambahan file md baru. **Contoh** ada materi himpunan maka tambahkan
   - ```
     - file: himpunan.md
+    ```
+  - Menjadi:
+  - ```
+    format: jb-book
+    root: intro
+    chapters:
+     - file: markdown
+     - file: notebooks
+     - file: markdown-notebooks
+     - file: himpunan.md
     ```
   - Setiap file baru wajib paling atas (#)  agar di table of content keluar judul materinya. contohnya:
   - ```
