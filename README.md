@@ -7,7 +7,7 @@ Panduan ini akan memandu Anda dalam membuat, membuat, dan menerbitkan Jupyter Bo
 ## Prasyarat
 
 Sebelum memulai, pastikan Anda telah menginstal aplikasi berikut ini:
-- Python (disarankan versi 3.7 atau yang lebih baru)
+- Python (disarankan versi 10 atau yang lebih baru)
 - pip (pengelola paket Python)
 - Git (sistem kontrol versi)
 
