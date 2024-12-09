@@ -110,7 +110,7 @@ Anda dapat melihat pratinjau HTML yang telah dibuat dengan:
 1. Mengklik dua kali file `index.html` di folder lokal Anda
 2. Membuka file tersebut di browser web dengan menggunakan jalur lengkap (misalnya, `file://path/to/materi/_build/html/index.html`)
 
-### Memaksakan Pembangunan Ulang Secara Menyeluruh
+### Memaksakan membuat file html Ulang Secara Menyeluruh
 
 Jika Anda ingin membangun ulang semua halaman, bahkan halaman yang tidak berubah:
 
@@ -120,20 +120,21 @@ jupyter-book build --all materi/
 
 ## Kontrol Versi dan Integrasi GitHub
 
-### Pementasan dan Melakukan Perubahan
+### Menyimpan dan Melakukan Perubahan
 
 Gunakan Git untuk melacak dan menyimpan perubahan proyek Anda:
 
 ```bash
-# Pementasan semua perubahan
+# menambahkan semua perubahan
 git tambahkan .
 
-# Melakukan komit perubahan dengan pesan deskriptif
+# Melakukan komit perubahan dengan pesan lengkap
 git commit -m “Menambahkan bab baru tentang himpunan”
 
-# Mendorong ke repositori jarak jauh
+# Meunggah ke repositori github
 git push
 ```
+Lakukan ini untuk menyimpan file ke github. Jaga jaga codespaces jika hilang/tidak sengaja terhapus
 
 ### Menerbitkan ke Halaman GitHub
 
@@ -150,15 +151,15 @@ pip install ghp-import
 cd materi
 ```
 
-2. Menyebarkan ke Halaman GitHub:
+2. Deployment ke Halaman GitHub Pages:
 ```bash
 ghp-import -n -p -f _build/html
 ```
 
-Catatan Penyebaran:** **Catatan Penyebaran
-- Tunggu 1-5 menit untuk penerapan
-- Periksa kemajuan penyebaran di bagian “Penyebaran” repositori GitHub Anda
-- Tanda centang hijau menandakan penyebaran berhasil
+Catatan Deployment:** **Catatan Deployment
+- Tunggu 1-5 menit untuk proses menjadi website online
+- Periksa hasil website di bagian “Deployment” repositori GitHub Anda
+- Tanda centang hijau menandakan deployment berhasil
 
 ## Pemecahan Masalah
 
@@ -173,7 +174,7 @@ jupyter-book build --all materi
 - Jika Anda mengalami masalah, pertimbangkan:
   1. Memeriksa versi Python dan pip Anda
   2. Memastikan semua dependensi telah terinstal
-  3. Memverifikasi jalur dan konfigurasi berkas
+  3. Memverifikasi file dan konfigurasi file
 
 ## Sumber Daya Tambahan
 
@@ -184,13 +185,13 @@ jupyter-book build --all materi
 
 - Dibuat oleh: @mfjrxn
 - Kontribusi diterima! Silakan kirimkan permintaan penarikan
-- Jangan lupa untuk membintangi repositori asli jika kamu merasa terbantu
+- Jangan lupa untuk membintangi repositori saya jika kamu merasa terbantu
 
 ## Kiat-kiat Akhir
 
 1. Baca dokumentasi dengan seksama
-2. Jangan menyalin-tempel secara membabi buta
+2. Jangan menyalin-tempel secara membabi buta!
 3. Pahami setiap langkah
 4. Berlatih dan bereksperimen
 
-Selamat membuat buku! 📘✨
+Selamat membuat catatan materi! 📘✨
