@@ -28,7 +28,7 @@ Perintah ini akan menginstal versi terbaru dari Jupyter Book dan memperbarui ins
 Buat sebuah proyek buku baru bernama “materi” (Anda dapat mengganti “materi” dengan nama proyek yang Anda inginkan):
 
 ```bash
-jupyter-book membuat materi
+jupyter-book create materi
 ```
 
 #### Struktur Proyek
@@ -56,9 +56,9 @@ Edit file `_toc.yml` untuk menentukan struktur buku Anda:
 format: jb-book
 root: intro
 bab:
-  - file: penurunan harga
-  - file: buku catatan
-  - file: penurunan harga-buku catatan
+  - file: markdown
+  - file: notebooks
+  - file: markdown-notebooks
 ```
 
 #### Menambahkan Bab Baru
@@ -69,14 +69,14 @@ Ketika Anda menambahkan berkas markdown baru (misalnya, `himpunan.md`), sertakan
 format: jb-book
 root: intro
 bab:
-  - file: penurunan harga
-  - file: buku catatan
-  - berkas: penurunan harga-buku catatan
-  - berkas: himpunan.md
+  - file: markdown
+  - file: notebooks
+  - berkas: markdown-notebooks
+  - berkas: himpunan
 ```
 
 **Tips Penulisan yang Penting:**
-- Selalu mulai berkas markdown baru dengan judul tingkat atas (#) yang menjelaskan bab tersebut
+- Selalu mulai berkas markdown baru dengan judul tingkat atas (#) yang menjelaskan bab tersebut dan sekaligus menampilkan nama materi di daftar isi
 - Contoh:
   ``` penurunan harga
   # HIMPUNAN
@@ -89,10 +89,10 @@ bab:
 
 ### Membangun Versi HTML
 
-Untuk menghasilkan halaman HTML untuk buku Anda:
+Untuk menghasilkan halaman HTML untuk notebooks Anda:
 
 ```bash
-jupyter-book membangun materi
+jupyter-book build materi
 ```
 
 Keluarannya akan terlihat seperti:
@@ -178,7 +178,7 @@ jupyter-book build --all materi
 ## Sumber Daya Tambahan
 
 - Dokumentasi Buku Resmi Jupyter: https://jupyterbook.org/
-- Repositori GitHub: [Tautan ke repositori asli]
+- Repositori GitHub: -
 
 ## Kontribusi
 
@@ -194,5 +194,3 @@ jupyter-book build --all materi
 4. Berlatih dan bereksperimen
 
 Selamat membuat buku! 📘✨
-
-Translated with www.DeepL.com/Translator (free version)
